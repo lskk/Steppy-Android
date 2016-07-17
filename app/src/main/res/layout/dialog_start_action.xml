@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="#2c3e50"
+    >
+    <Button android:id="@+id/dsa_resume_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/app_name"
+        android:drawableLeft="@drawable/ic_start"
+        android:background="#00a65a"
+        android:drawablePadding="5dip"
+        android:text="@string/start"
+        android:textColor="#ffffff"
+        android:layout_marginBottom="5dip"
+        android:gravity="left|center_vertical"/>
+    
+    <Button android:id="@+id/dsa_pause_btn"
+        android:layout_width="match_parent"
+        android:background="#00a65a"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dsa_resume_btn"
+        android:contentDescription="@string/app_name"
+        android:drawableLeft="@drawable/ic_pause"
+        android:drawablePadding="5dip"
+        android:text="@string/pause"
+        android:layout_marginBottom="5dip"
+        android:textColor="#ffffff"
+        android:gravity="left|center_vertical"/>
+    
+    <Button android:id="@+id/dsa_reset_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00a65a"
+        android:layout_below="@id/dsa_pause_btn"
+        android:contentDescription="@string/app_name"
+        android:drawableLeft="@drawable/ic_reset"
+        android:drawablePadding="5dip"
+        android:text="@string/reset"
+        android:layout_marginBottom="5dip"
+        android:textColor="#ffffff"
+        android:gravity="left|center_vertical"/>
+    
+    <Button android:id="@+id/dsa_quit_btn"
+        android:layout_width="match_parent"
+        android:background="#00a65a"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dsa_reset_btn"
+        android:contentDescription="@string/app_name"
+        android:drawableLeft="@drawable/ic_quit"
+        android:drawablePadding="5dip"
+        android:textColor="#ffffff"
+        android:text="@string/quit"
+        android:gravity="left|center_vertical"/>
+
+</RelativeLayout>

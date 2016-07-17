@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ScrollView01"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:background="#2c3e50"
+    >
+	<RelativeLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical"
+	    android:background="#00a65a" >
+	    
+	        <com.androidplot.xy.XYPlot
+	            android:id="@+id/mySimpleXYPlot"
+	            android:layout_width="fill_parent"
+	            android:layout_height="250dp"
+	            androidPlot.title="Weekly Steps"
+	            androidPlot.domainLabel="Days"
+	            androidPlot.rangeLabel="Step"
+	            androidPlot.titleWidget.labelPaint.textSize="@dimen/title_font_size"
+	            androidPlot.domainLabelWidget.labelPaint.textSize="@dimen/domain_label_font_size"
+	            androidPlot.rangeLabelWidget.labelPaint.textSize="@dimen/range_label_font_size"
+	            androidPlot.graphWidget.marginTop="20dp"
+	            androidPlot.graphWidget.marginLeft="15dp"
+	            androidPlot.graphWidget.marginBottom="25dp"
+	            androidPlot.graphWidget.marginRight="10dp"
+	            androidPlot.graphWidget.rangeLabelPaint.textSize="15sp"
+	            androidPlot.graphWidget.rangeOriginLabelPaint.textSize="15sp"
+	            androidPlot.graphWidget.domainLabelPaint.textSize="15sp"
+	            androidPlot.graphWidget.domainOriginLabelPaint.textSize="15sp"
+	            androidPlot.legendWidget.textPaint.textSize="@dimen/legend_text_font_size"
+	            androidPlot.legendWidget.iconSizeMetrics.heightMetric.value="15dp"
+	            androidPlot.legendWidget.iconSizeMetrics.widthMetric.value="15dp"
+	            androidPlot.legendWidget.heightMetric.value="25dp"
+	            androidPlot.legendWidget.positionMetrics.anchor="right_bottom"
+	            androidPlot.graphWidget.gridLinePaint.color="#000000"/>    
+	
+	</RelativeLayout>
+</ScrollView>

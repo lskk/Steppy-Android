@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/sb_profpict"
+        android:layout_width="@dimen/sb_profpict_width"
+        android:layout_height="@dimen/sb_profpict_height"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/profpict_blank" />
+
+    <TextView
+        android:id="@+id/sb_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/sb_profpict"
+        android:layout_marginLeft="@dimen/sb_horizontal_margin"
+        android:text="@string/sb_name"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/sb_progress_percentage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/sb_name"
+        android:layout_marginTop="5dip"
+        android:text="@string/sb_mission_percent"
+        android:textSize="@dimen/dashboard_text_size_unit" />
+
+    <ProgressBar
+        android:id="@+id/dashboard_weekly_progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sb_name"
+        android:layout_marginLeft="@dimen/sb_horizontal_margin"
+        android:layout_marginRight="@dimen/sb_horizontal_margin"
+        android:layout_toLeftOf="@id/sb_progress_percentage"
+        android:layout_toRightOf="@id/sb_profpict"
+        android:layout_marginTop="5dip"
+        android:indeterminate="false"
+        android:max="100"
+        android:progressDrawable="@drawable/blue_progressbar"
+        android:minWidth="200dp"
+        android:progress="2" />
+    
+    <TextView
+        android:id="@+id/sb_high_score_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sb_progress_percentage"
+        android:layout_toRightOf="@id/sb_profpict"
+        android:layout_marginLeft="@dimen/sb_horizontal_margin"
+        android:text="@string/sb_high_score"
+        android:textSize="@dimen/dashboard_text_size_unit" />
+
+    <TextView
+        android:id="@+id/sb_today_step_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sb_high_score_info"
+        android:layout_toRightOf="@id/sb_profpict"
+        android:layout_marginLeft="@dimen/sb_horizontal_margin"
+        android:text="@string/today_step_info"
+        android:textSize="@dimen/dashboard_text_size_unit" />
+    
+    
+
+</RelativeLayout>

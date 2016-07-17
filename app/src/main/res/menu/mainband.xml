@@ -1,0 +1,29 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/dashboard"
+        android:orderInCategory="100"
+        android:showAsAction="always"
+        android:title="Dashboard"
+        android:icon="@drawable/ac_graph"/>  
+    <item
+        android:id="@+id/action_share"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/action_share"
+        android:actionProviderClass="android.widget.ShareActionProvider"
+        android:icon="@android:drawable/ic_menu_preferences"/>
+    <item
+        android:id="@+id/about"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="About"
+        android:icon="@android:drawable/ic_menu_preferences"/>
+    <item
+        android:id="@+id/logout"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="Logout"
+        android:icon="@android:drawable/ic_menu_preferences"/>
+    
+</menu>

@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Steppy</string>
+    <string name="settings">Settings</string>
+    <string name="action_share">Share</string>
+    <string name="action_maps">Maps</string>
+    <string name="self_destruct">selfDestruct</string>
+    <string name="sensor">Censor</string>
+    <string name="graph">Graphic</string>
+    <string name="save">Save</string>
+    <string name="steps">steps</string>
+    <string name="heart_rate">HeartRate</string>
+    <string name="default_text">-- bpm</string>
+    <string name="miles">miles</string>
+    <string name="steps_per_week">steps/week</string>
+    <string name="steps_per_month">steps/month</string>
+    <string name="kilometers_per_hour">kilometers / hour</string>
+    <string name="miles_per_hour">miles\nperhour</string>
+    <string name="sensor_value">sensor\nvalue</string>
+    <string name="calories_burned">Calories\nburned</string>
+    <string name="challenge">Challenge</string>
+    <string name="challenge_completed">Completed</string>
+    <string name="no_name">No name</string>
+    <string name="today_step_info">Today %1$s, Weekly %2$s</string>
+    <string name="level_info">Level: %s</string>
+    <string name="login">Login</string>
+    <string name="sign_up">Sign up</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="account">Account</string>
+    <string name="started">Counting started.</string>
+    <string name="stopped">Counting stopped.</string>
+    <string name="notification_subtitle">Counting your steps</string>
+    <string name="pause">Pause</string>
+    <string name="profil">Profil</string>
+    <string name="resume">Resume</string>
+    <string name="reset">Reset</string>
+    <string name="start">Start</string>
+    <string name="startmission">Refresh</string>
+    <string name="notif">Notification</string>
+    <string name="quit">Quit</string>
+    <string name="question_mark">\?</string>
+    <string name="email">Email</string>
+    <string name="sign_up_text">or Signup</string>
+
+    <!-- Fragment Dashboard -->
+    <string name="dashboard_step_count">0</string>
+    <string name="dashboard_progress_percentage">0%</string>
+    <string name="dashboard_progress">20%</string>
+    <string name="mission_today">Mission today &gt;&gt;</string>
+    <string name="dialog_daily_mission_title">Daily Mission</string>
+    <string name="dialog_daily_mission_ok">OK</string>
+    
+    <!-- Fragment Social Board (sb)-->
+	<string name="sb_name">Name here</string>
+	<string name="sb_mission_percent">0%</string>
+	<string name="sb_high_score">High score: %1$s, Level: %2$s</string>
+	<string name="sb_title_local">Local Board Ranking</string>
+	<string name="sb_title_global">Global Board Ranking</string>
+	
+	<!-- Activity Login -->
+	<string name="login_error_response">Failed to login: %s</string>
+	
+    <!-- Preferences -->
+    <string name="pref_account_key">keyAccountSetting</string>
+    <string name="pref_account_setting">Account Setting</string>
+    <string name="pref_step_title">General Setting</string>
+    <string name="pref_sync">Synchronization</string>
+    <string name="pref_sync_key">keySync</string>
+    <string name="pref_account_summary">login as: %s</string>
+    <string name="sensitivity_setting">Sensitivity</string>
+    <string name="sensitivity_setting_details">Calibrate the step detector</string>
+    <string name="sensitivity_setting_title">Select sensitivity level</string>
+    <string name="operation_level_setting">Operational level</string>
+    <string name="operation_level_setting_details">Some OS versions prevent using sensors when the screen is off; set the level that works for you</string>
+    <string name="operation_level_setting_title">Select operational level</string>
+    <string name="units_setting">Units</string>
+    <string name="units_setting_details">Imperial or metric units</string>
+    <string name="units_setting_title">Choose your units</string>
+    <string name="units_metric">metric (kilometers)</string>
+    <string name="units_imperial">imperial (miles)</string>
+    <string name="exercise_type_setting">Exercise type</string>
+    <string name="exercise_type_setting_details">For calorie calculation</string>
+    <string name="exercise_type_setting_title">Choose exercise type</string>
+    <string name="exercise_type_running">running</string>
+    <string name="exercise_type_walking">walking</string>
+    <string name="maintain_setting">Maintain pace/speed</string>
+    <string name="maintain_setting_details">Maintaining a desired a pace/speed</string>
+    <string name="maintain_setting_title">Maintain:</string>
+    <string name="maintain_nothing">nothing</string>
+    <string name="maintain_pace">pace</string>
+    <string name="maintain_speed">speed</string>
+    <string name="extra_high">extra high</string>
+    <string name="very_high">very high</string>
+    <string name="high">high</string>
+    <string name="higher">higher</string>
+    <string name="medium">medium</string>
+    <string name="lower">lower</string>
+    <string name="low">low</string>
+    <string name="very_low">very low</string>
+    <string name="extra_low">extra low</string>
+    <string name="run_in_background">Normal (just try running in background)</string>
+    <string name="keep_screen_on">Screen on (keep screen dim)</string>
+    <string name="wake_up">Aggressive (wake up when I turn screen off)</string>
+    <string name="interval_15_seconds">15 seconds</string>
+    <string name="interval_30_seconds">30 seconds</string>
+    <string name="interval_1_minute">1 minute</string>
+    <string name="interval_2_minutes">2 minutes</string>
+    <string name="interval_5_minutes">5 minutes</string>
+    <string name="interval_10_minutes">10 minutes</string>
+    <string name="sync_contacts">Friends contact</string>
+
+    <!-- Voice Settings -->
+    <string name="voice_settings_title">Voice</string>
+    <string name="voice_setting">Speak</string>
+    <string name="voice_setting_details">Enable/disable voice notification</string>
+    <string name="speaking_interval_setting">Interval</string>
+    <string name="speaking_interval_setting_details">Voice notification interval</string>
+    <string name="tell_what">What to tell</string>
+    <string name="tell_steps_setting">Steps</string>
+    <string name="tell_steps_setting_details"></string>
+    <string name="tell_pace_setting">Pace</string>
+    <string name="tell_pace_setting_details">steps / minute</string>
+    <string name="tell_distance_setting">Distance</string>
+    <string name="tell_distance_setting_details">kilometers or miles</string>
+    <string name="tell_speed_setting">Speed</string>
+    <string name="tell_speed_setting_details">km/h or mph</string>
+    <string name="tell_calories_setting">Calories burned</string>
+    <string name="tell_calories_setting_details"></string>
+    <string name="tell_fasterslower_setting">Faster/slower</string>
+    <string name="tell_fasterslower_setting_details">Helps you maintain your desired pace or speed (interval doesn\'t apply)</string>
+    <string name="title_activity_sign_up">Steppy Sign Up</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+	<string name="body_weight_setting_title">Enter your body weight</string>
+	<string name="body_height_setting_title">Enter your body height</string>
+	<string name="age_title">Enter your age</string>
+	<string name="display_name_title">Enter display name</string>
+	<string name="kilograms">kilograms</string>
+    <string name="pounds">pounds</string>
+    <string name="centimeter">Centimeter</string>
+    <string name="year">Years</string>
+    <string name="name"></string>
+    
+    <string name="display_name">Display Name</string>
+    <string name="telp_number">Telp Numb., Ex: 856345xxx</string>
+    
+    <string name="default_country_code">+XXX</string>
+    <string name="country_prompt">Choose your country:</string>
+    <string name="signup_error_response">Signup new user failed.</string>
+    
+
+	<string-array name="gender_array">
+        <item>Gender : </item>
+        <item>Male</item>
+        <item>Female</item>
+        <item>Other</item>
+    </string-array>
+
+
+ <!-- Nav Drawer Menu Items -->
+    <string-array name="nav_drawer_items">
+        <item >Settings</item>
+        <item >Calibrate</item>
+        <item >Share</item>
+        <item >About</item>
+    </string-array>
+
+        <!-- Nav Drawer List Item Icons -->
+    <!-- Keep them in order as the titles are in -->
+    <array name="nav_drawer_icons">
+        <item>@drawable/ic_phone</item>
+        <item>@drawable/ic_phone</item>
+        <item>@drawable/ic_phone</item>
+        <item>@drawable/ic_phone</item>
+    </array>
+     
+    <!-- Content Description -->
+    <string name="desc_list_item_icon">Item Icon</string>
+
+
+</resources>
+

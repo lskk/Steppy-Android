@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<lint>
+    <issue id="ViewConstructor">
+        <ignore path="src/org/shesop/steppy/SocialBoardGlobalAdapter.java" />
+        <ignore path="src/org/shesop/steppy/SocialBoardLocalAdapter.java" />
+    </issue>
+</lint>

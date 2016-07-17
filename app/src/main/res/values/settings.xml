@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+ <!--<string name="http_address">https://apishesop.azurewebsites.net/api/</string> -->
+ <string name="http_address">http://apishesop.azurewebsites.net/api/</string>
+<!--  <string name="http_address">https://dev-apishesop.azurewebsites.net/api/</string> -->
+ <!--  <string name="http_address">https://dev-apishesop.azurewebsites.net/api/</string> -->
+ <!-- <string name="http_address">https://apishesop.azurewebsites.net/api/</string> -->
+</resources>

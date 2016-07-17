@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    	xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical"
+	    android:background="#00a65a" >
+	<ScrollView 
+		    android:id="@+id/ScrollView01"
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent" 
+		    android:background="#2c3e50"
+		    >
+		<RelativeLayout 
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:background="#00a65a"
+		    >
+		
+		    <RelativeLayout
+		        android:id="@+id/dashboard_header"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_centerHorizontal="true"
+		        android:background="#fff"
+		        android:paddingBottom="10dip"
+		        android:paddingLeft="@dimen/activity_horizontal_margin"
+		        android:paddingRight="@dimen/activity_horizontal_margin"
+		        android:paddingTop="10dip" >
+		
+		        <org.lskk.shesop.steppy.utils.RoundedImageView
+		            android:id="@+id/dashboard_profpict"
+		            android:layout_width="@dimen/dashboard_profpict_width"
+		            android:layout_height="@dimen/dashboard_profpict_height"
+		            android:layout_marginRight="8dip"
+		            android:contentDescription="@string/app_name"
+		            android:src="@drawable/profpict_blank" />
+		
+		        <LinearLayout
+		            android:id="@+id/profil_sum_layout"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_alignParentRight="true"
+		            android:layout_gravity="center_vertical"
+		            android:layout_alignTop="@+id/dashboard_profpict"
+		            android:layout_toRightOf="@+id/dashboard_profpict"
+		            android:layout_marginTop="15dp"
+		            android:orientation="vertical" >
+		
+		            <TextView
+		                android:id="@+id/dashboard_name"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:text="User Name"
+		                android:paddingLeft="10dip"
+		                android:paddingRight="10dip"
+		                android:paddingTop="5dip"
+		                android:paddingBottom="5dip"
+		                android:background="@drawable/text_default_normal"
+		                android:textColor="#fff"
+		                android:textStyle="bold"
+		                android:textAppearance="?android:attr/textAppearanceMedium" />
+		
+		            <TextView
+		                android:id="@+id/text_age"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:textColor="#00a65a"
+		                android:text="23 Years" />
+		
+		            <LinearLayout
+		                android:layout_width="fill_parent"
+		                android:layout_height="wrap_content" >
+		
+		                <TextView
+		                    android:id="@+id/text_height"
+		                    android:layout_width="wrap_content"
+		                    android:layout_height="wrap_content"
+		                    android:textColor="#00a65a"
+		                    android:text="176 cm" />
+		
+		                <TextView
+		                    android:id="@+id/text_weight"
+		                    android:paddingLeft="3dp"
+		                    android:layout_width="90dp"
+		                    android:textColor="#00a65a"
+		                    android:layout_height="wrap_content"
+		                    android:text="58 Kg" />
+		
+		            </LinearLayout>
+		
+		            <TextView
+		                android:id="@+id/text_state"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:text="Too Small Weight" 
+		                android:textColor="#00a65a"
+		                android:textStyle="bold"
+		                />
+		
+		        </LinearLayout>
+		
+		    </RelativeLayout>
+		    <LinearLayout
+		        android:id="@+id/dashboard_rl1"
+		        android:background="#2c3e50"
+		        android:layout_width="match_parent"
+		        android:layout_height="match_parent"
+		        android:layout_below="@id/dashboard_header"
+		        android:layout_gravity="center_vertical"
+		        android:layout_marginTop="10dip"
+		        android:gravity="center"
+		        android:orientation="vertical"
+		        android:padding="5dip" >
+			        <LinearLayout
+			            android:id="@+id/box_steps_weekly"
+			            android:layout_width="match_parent"
+			            android:layout_height="match_parent"
+			            android:layout_margin="5dip"
+			            android:layout_weight="1"
+			            android:gravity="center"
+			            android:orientation="vertical"
+			            android:padding="5dip" >
+			
+			            <TextView
+			                android:id="@+id/dashboard_step_count"
+			                android:layout_width="wrap_content"
+			                android:layout_height="wrap_content"
+			                android:background="@drawable/circle_background"
+			                android:gravity="center"
+			                android:textSize="35sp"
+			                android:text="@string/dashboard_step_count"
+			                android:textColor="#FFFFFF"
+			                />
+			
+			            <TextView
+			                android:id="@+id/dashboard_step_unit"
+			                android:layout_width="wrap_content"
+			                android:layout_height="wrap_content"
+			                android:text="@string/steps"
+			                android:textColor="#FFFFFF"
+			                android:textSize="20sp" />
+			        </LinearLayout>
+			
+			        <LinearLayout
+			            android:id="@+id/box_speed_calories"
+			            android:layout_width="match_parent"
+			            android:layout_height="match_parent"
+			            android:layout_margin="5dip"
+			            android:layout_weight="1"
+			            android:baselineAligned="false"
+			            android:orientation="horizontal" >
+			
+			            <LinearLayout
+			                android:layout_width="match_parent"
+			                android:layout_height="match_parent"
+			                android:layout_marginRight="5dip"
+			                android:layout_weight="1"
+			                android:gravity="center"
+			                android:orientation="vertical"
+			                 >
+			
+			                <TextView
+			                    android:id="@+id/speed_value"
+			                    android:layout_width="wrap_content"
+			                    android:layout_height="wrap_content"
+			                    android:background="@drawable/circle_background"
+			                    android:gravity="center"
+			                    android:text="@string/dashboard_step_count"
+			                    android:textColor="#FFFFFF"
+			                    android:textSize="35sp" />
+			
+			                <TextView
+			                    android:id="@+id/speed_units"
+			                    android:layout_width="wrap_content"
+			                    android:layout_height="match_parent"
+			                    android:gravity="center_vertical"
+			                    android:text="@string/miles_per_hour"
+			                    android:textColor="#FFFFFF"
+			                    android:textSize="15sp" />
+			            </LinearLayout>
+			
+			            <LinearLayout
+			                android:layout_width="match_parent"
+			                android:layout_height="match_parent"
+			                android:layout_marginLeft="5dip"
+			                android:layout_weight="1"
+			                android:orientation="vertical"
+			                android:gravity="center" >
+			
+			                <TextView
+			                    android:id="@+id/calories_value"
+			                    android:layout_width="wrap_content"
+			                    android:layout_height="wrap_content"
+			                    android:background="@drawable/circle_background"
+			                    android:gravity="center"
+			                    android:text="@string/dashboard_step_count"
+			                    android:textColor="#FFFFFF"
+			                    android:textSize="@dimen/dashboard_text_size_value" />
+			
+			                <TextView
+			                    android:id="@+id/calories_units"
+			                    android:layout_width="wrap_content"
+			                    android:layout_height="match_parent"
+			                    android:gravity="center_vertical"
+			                    android:text="@string/calories_burned"
+			                    android:textColor="#FFFFFF"
+			                    android:textSize="15sp" />
+			            </LinearLayout>
+			        </LinearLayout>
+		    </LinearLayout>
+		</RelativeLayout>
+	</ScrollView>
+	<RelativeLayout
+		        android:id="@+id/dashboard_rl2"
+		        android:layout_width="match_parent"
+		        android:layout_height="60dip"
+		        android:layout_alignParentBottom="true" >
+		
+		        <TextView android:id="@+id/dashboard_start_btn"
+		            android:layout_width="match_parent"
+		            android:layout_height="match_parent"
+		            android:layout_centerInParent="true"
+		            android:background="@drawable/green_textview"
+		            android:gravity="center"
+		            android:text="Pause"
+		            android:textColor="#FFFFFF"
+		            android:textSize="30sp" />
+		
+		        <ImageButton
+		            android:id="@+id/dashboard_btn_start_action"
+		            android:layout_width="48dip"
+		            android:layout_alignParentRight="true"
+		            android:layout_height="match_parent"
+		            android:layout_centerVertical="true"
+		            android:layout_marginRight="10dip"
+		            android:background="@android:color/transparent"
+		            android:contentDescription="@string/app_name"
+		            android:src="@drawable/ic_power_off" />
+		        
+		  <!--       <ImageButton
+		            android:id="@+id/dashboard_btn_start_send"
+		            android:layout_width="48dip"
+		            android:layout_height="match_parent"
+		            android:layout_alignParentLeft="true"
+		            android:layout_centerVertical="true"
+		            android:layout_marginRight="10dip"
+		            android:background="@android:color/transparent"
+		            android:contentDescription="@string/app_name"
+		            android:src="@drawable/ic_power_off" /> --> 
+		        
+		    </RelativeLayout>
+</RelativeLayout>		

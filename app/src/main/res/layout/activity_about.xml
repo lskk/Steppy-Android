@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center"
+    android:background="#2c3e50"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingBottom="40dp"
+    android:paddingLeft="40dp"
+    android:paddingRight="40dp" >
+
+   <ImageView 
+       android:id="@+id/image1"
+       android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+       android:src="@drawable/steppy_splash"
+       />
+
+   <TextView
+       android:layout_width="fill_parent"
+       android:textStyle="bold"
+       android:layout_height="wrap_content"
+       android:gravity="center"
+       android:text="V 1.0 Beta"
+       android:textAppearance="?android:attr/textAppearanceMedium"
+       android:textColor="#ffffff" 	
+       />
+    <TextView
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:gravity="center"
+       android:text="Copyright Shesop (c) 2015 \nLaboratorium Sistem Kendali dan Komputer\nInstitut Teknologi Bandung \nMore Info :"
+       android:textAppearance="?android:attr/textAppearanceSmall"
+       android:textColor="#ffffff" 	
+       />
+    <TextView
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:gravity="center"
+       android:autoLink="email"
+       android:textStyle="bold"
+       android:text="shesop@outlook.com"
+       android:textAppearance="?android:attr/textAppearanceSmall"
+       android:textColor="#ffffff" 	
+       />
+
+</LinearLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sat="http://schemas.android.com/apk/res/android.view.ext"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/beckground"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/satu"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/steppy" />
+
+    <Button
+        android:id="@+id/dua"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/heart" />
+    
+    <Button
+        android:id="@+id/tiga"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/history" />
+    
+    <Button
+        android:id="@+id/empat"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/censor" />
+    
+    <Button
+        android:id="@+id/lima"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/tentang" />
+
+</LinearLayout>

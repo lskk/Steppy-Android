@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    	xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical"
+	    android:background="#00a65a" >
+	<ScrollView 
+	    android:id="@+id/ScrollView01"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent" 
+	    android:background="#2c3e50"
+	    >
+		<RelativeLayout
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="vertical"
+		    android:background="#00a65a" >
+		    
+			<RelativeLayout
+		        android:id="@+id/dashboard_header"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_centerHorizontal="true"
+		        android:background="#fff"
+		        android:paddingBottom="10dip"
+		        android:paddingLeft="@dimen/activity_horizontal_margin"
+		        android:paddingRight="@dimen/activity_horizontal_margin"
+		        android:paddingTop="10dip" >
+		
+		        <org.lskk.shesop.steppy.utils.RoundedImageView
+		            android:id="@+id/dashboard_profpict"
+		            android:layout_width="@dimen/dashboard_profpict_width"
+		            android:layout_height="@dimen/dashboard_profpict_height"
+		            android:layout_marginRight="8dip"
+		            android:contentDescription="@string/app_name"
+		            android:src="@drawable/profpict_blank" />
+		
+		        <LinearLayout
+		            android:id="@+id/profil_sum_layout"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_alignParentRight="true"
+		            android:layout_gravity="center_vertical"
+		            android:layout_alignTop="@+id/dashboard_profpict"
+		            android:layout_toRightOf="@+id/dashboard_profpict"
+		            android:layout_marginTop="15dp"
+		            android:orientation="vertical" >
+		
+		            <TextView
+		                android:id="@+id/text_name"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:text="User Name"
+		                android:paddingLeft="10dip"
+		                android:paddingRight="10dip"
+		                android:paddingTop="5dip"
+		                android:paddingBottom="5dip"
+		                android:background="@drawable/text_default_normal"
+		                android:textColor="#fff"
+		                android:textStyle="bold"
+		                android:textAppearance="?android:attr/textAppearanceMedium" />
+		
+		            <TextView
+		                android:id="@+id/text_age"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:textColor="#00a65a"
+		                android:text="23 Years" />
+		
+		            <LinearLayout
+		                android:layout_width="fill_parent"
+		                android:layout_height="wrap_content" >
+		
+		                <TextView
+		                    android:id="@+id/text_height"
+		                    android:layout_width="wrap_content"
+		                    android:layout_height="wrap_content"
+		                    android:textColor="#00a65a"
+		                    android:text="176 cm" />
+		
+		                <TextView
+		                    android:id="@+id/text_weight"
+		                    android:paddingLeft="3dp"
+		                    android:layout_width="90dp"
+		                    android:textColor="#00a65a"
+		                    android:layout_height="wrap_content"
+		                    android:text="58 Kg" />
+		
+		            </LinearLayout>
+		
+		            <TextView
+		                android:id="@+id/text_state"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:text="Too Small Weight" 
+		                android:textColor="#00a65a"
+		                android:textStyle="bold"
+		                />
+		            <TextView
+		                android:id="@+id/test_array"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:text="" 
+		                android:textColor="#d04545"
+		                android:textStyle="bold"
+		                />
+		
+		        </LinearLayout>
+		
+		    </RelativeLayout>
+		    
+		        <com.androidplot.xy.XYPlot
+		            android:layout_below="@id/dashboard_header"
+		            android:id="@+id/mySimpleXYPlot"
+		            android:layout_width="fill_parent"
+		            android:layout_marginTop="5dp"
+		            android:layout_height="250dp"
+		            androidPlot.title="Weekly Steps"
+		            androidPlot.domainLabel="Days"
+		            androidPlot.rangeLabel="Heart Rate"
+		            androidPlot.titleWidget.labelPaint.textSize="@dimen/title_font_size"
+		            androidPlot.domainLabelWidget.labelPaint.textSize="@dimen/domain_label_font_size"
+		            androidPlot.rangeLabelWidget.labelPaint.textSize="@dimen/range_label_font_size"
+		            androidPlot.graphWidget.marginTop="20dp"
+		            androidPlot.graphWidget.marginLeft="15dp"
+		            androidPlot.graphWidget.marginBottom="25dp"
+		            androidPlot.graphWidget.marginRight="10dp"
+		            androidPlot.graphWidget.rangeLabelPaint.textSize="15sp"
+		            androidPlot.graphWidget.rangeOriginLabelPaint.textSize="7sp"
+		            androidPlot.graphWidget.domainLabelPaint.textSize="7sp"
+		            androidPlot.graphWidget.domainOriginLabelPaint.textSize="7sp"
+		            androidPlot.legendWidget.textPaint.textSize="@dimen/legend_text_font_size"
+		            androidPlot.legendWidget.iconSizeMetrics.heightMetric.value="15dp"
+		            androidPlot.legendWidget.iconSizeMetrics.widthMetric.value="15dp"
+		            androidPlot.legendWidget.heightMetric.value="25dp"
+		            androidPlot.legendWidget.positionMetrics.anchor="right_bottom"
+		            androidPlot.graphWidget.gridLinePaint.color="#000000"/>
+	
+		        <LinearLayout
+		            android:id="@+id/boxButton"
+		            android:layout_width="fill_parent"
+		            android:layout_height="wrap_content" 
+		            android:layout_below="@id/mySimpleXYPlot"
+		            android:orientation="vertical"
+		            android:padding="7dp"
+		            >
+		        
+		        	<Button
+		                android:id="@+id/setdate"
+		                android:layout_width="fill_parent"
+		                android:layout_height="wrap_content"
+		                android:background="@drawable/edittext_signup"
+		                android:textColor="#fff"
+		                android:layout_weight="1"
+		                android:layout_marginRight="7dp"
+		                android:layout_marginLeft="7dp"
+		                android:text="Set Date" 
+		                android:layout_marginBottom="10dp"
+		                />
+		        	
+					<Button
+		                android:id="@+id/refresh"
+		                android:layout_width="fill_parent"
+		                android:layout_height="wrap_content"
+		                android:background="#fff"
+		                android:textColor="#00a65a"
+		                android:layout_marginRight="7dp"
+		                android:layout_marginLeft="7dp"
+		                android:layout_weight="1"
+		                android:text="Show Graphic" />
+					
+		        </LinearLayout>
+		</RelativeLayout>
+	</ScrollView>
+</RelativeLayout>

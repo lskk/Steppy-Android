@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory android:title="@string/pref_account_setting" >
+        <org.lskk.shesop.steppy.preferences.AccountPreference
+            android:dialogIcon="@android:drawable/ic_dialog_alert"
+            android:dialogMessage="Are you sure you wish to logout from this account?"
+            android:key="@string/pref_account_key"
+            android:negativeButtonText="Cancel"
+            android:positiveButtonText="Logout"
+            android:summary="@string/pref_account_summary"
+            android:title="@string/account"
+            android:enabled="false" />
+        
+        <org.lskk.shesop.steppy.preferences.NamePreference
+                android:key="display_name"
+                android:title="Display Name"
+                android:summary="Edit your display name"
+                android:dialogTitle="Edit display name"
+                android:defaultValue="Steppy" />
+        
+        
+        <org.lskk.shesop.steppy.preferences.AgePreference
+                android:key="age"
+                android:title="Age"
+                android:summary="Edit your age"
+                android:dialogTitle="Edit age"
+                android:defaultValue="18" />
+        
+        <org.lskk.shesop.steppy.preferences.BodyWeightPreference
+                android:key="body_weight"
+                android:title="Body Weight"
+                android:summary="Edit your body weight"
+                android:dialogTitle="Edit body weight"
+                android:defaultValue="50" />
+        
+        <org.lskk.shesop.steppy.preferences.BodyHeightPreference
+                android:key="body_height"
+                android:title="Body Height"
+                android:summary="Edit your body height"
+                android:dialogTitle="Edit body height"
+                android:defaultValue="165" />
+        
+        <Preference
+        android:key="update_pref"
+        android:title="Update"
+        android:summary="Update All Preferences after edit"
+        android:widgetLayout="@layout/pref_update_button" 
+   		/>
+            
+        <Preference android:title="Logout"
+            android:key="logout"/>
+    </PreferenceCategory>
+    
+    <PreferenceCategory 
+        android:title="@string/pref_step_title" 
+        android:key="stepPref"
+        >
+        <ListPreference
+            android:defaultValue="22.5"
+            android:dialogTitle="@string/sensitivity_setting_title"
+            android:entries="@array/sensitivity_preference"
+            android:entryValues="@array/sensitivity_preference_values"
+            android:key="sensitivity"
+            android:summary="@string/sensitivity_setting_details"
+            android:title="@string/sensitivity_setting" />
+        <ListPreference
+            android:defaultValue="30"
+            android:dialogTitle="@string/operation_level_setting_title"
+            android:entries="@array/operation_level_preference"
+            android:entryValues="@array/operation_level_preference_values"
+            android:key="operation_level"
+            android:summary="@string/operation_level_setting_details"
+            android:title="@string/operation_level_setting" />
+        <ListPreference
+            android:defaultValue="metric"
+            android:dialogTitle="@string/units_setting_title"
+            android:entries="@array/units_preference"
+            android:entryValues="@array/units_preference_values"
+            android:key="units"
+            android:summary="@string/units_setting_details"
+            android:title="@string/units_setting" />
+        <ListPreference
+            android:defaultValue="running"
+            android:dialogTitle="@string/exercise_type_setting_title"
+            android:entries="@array/exercise_type_preference"
+            android:entryValues="@array/exercise_type_preference_values"
+            android:key="exercise_type"
+            android:summary="@string/exercise_type_setting_details"
+            android:title="@string/exercise_type_setting" />
+        <ListPreference
+            android:defaultValue="none"
+            android:dialogTitle="@string/maintain_setting_title"
+            android:entries="@array/maintain_preference"
+            android:entryValues="@array/maintain_preference_values"
+            android:key="maintain"
+            android:summary="@string/maintain_setting_details"
+            android:title="@string/maintain_setting" />
+    </PreferenceCategory>
+    
+    <PreferenceCategory 
+        android:title="@string/voice_settings_title" 
+        android:key="speakPref"
+        >
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="speak"
+            android:summary="@string/voice_setting_details"
+            android:title="@string/voice_setting" />
+
+        <ListPreference
+            android:defaultValue="1"
+            android:dependency="speak"
+            android:entries="@array/speaking_interval_preference"
+            android:entryValues="@array/speaking_interval_preference_values"
+            android:key="speaking_interval"
+            android:summary="@string/speaking_interval_setting_details"
+            android:title="@string/speaking_interval_setting" />
+
+        <PreferenceScreen
+            android:dependency="speak"
+            android:key="tell_what"
+            android:title="@string/tell_what" >
+            <PreferenceCategory android:title="@string/tell_what" >
+                <CheckBoxPreference
+                    android:defaultValue="false"
+                    android:key="tell_steps"
+                    android:summary="@string/tell_steps_setting_details"
+                    android:title="@string/tell_steps_setting" />
+                <CheckBoxPreference
+                    android:defaultValue="false"
+                    android:key="tell_pace"
+                    android:summary="@string/tell_pace_setting_details"
+                    android:title="@string/tell_pace_setting" />
+                <CheckBoxPreference
+                    android:defaultValue="false"
+                    android:key="tell_distance"
+                    android:summary="@string/tell_distance_setting_details"
+                    android:title="@string/tell_distance_setting" />
+                <CheckBoxPreference
+                    android:defaultValue="false"
+                    android:key="tell_speed"
+                    android:summary="@string/tell_speed_setting_details"
+                    android:title="@string/tell_speed_setting" />
+                <CheckBoxPreference
+                    android:defaultValue="false"
+                    android:key="tell_calories"
+                    android:summary="@string/tell_calories_setting_details"
+                    android:title="@string/tell_calories_setting" />
+                <CheckBoxPreference
+                    android:defaultValue="false"
+                    android:key="tell_fasterslower"
+                    android:summary="@string/tell_fasterslower_setting_details"
+                    android:title="@string/tell_fasterslower_setting" />
+            </PreferenceCategory>
+        </PreferenceScreen>
+    </PreferenceCategory>
+    
+    <PreferenceCategory 
+        android:title="@string/pref_sync" 
+        android:key="syncPref"
+        >
+        <Preference android:title="@string/sync_contacts"
+            android:key="@string/pref_sync_key"/>
+    </PreferenceCategory>
+
+</PreferenceScreen>
